@@ -1,5 +1,5 @@
 {
-    "name": "olexin/bitrix-exporter",
+    "name": "olexin-pro/php-bx24-exporter",
     "type": "project",
 	"keywords": ["Export", "Bitrix24"],
     "require": {
