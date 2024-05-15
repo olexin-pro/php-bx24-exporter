@@ -4,5 +4,6 @@ bin_php/
 php/
 
 /logs/*.log
-*.csv
-.env
+/*.csv
+/.env
+/*.zip
