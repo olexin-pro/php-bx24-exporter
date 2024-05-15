@@ -1,0 +1,19 @@
+#!/usr/bin/php
+<?php
+if (php_sapi_name() !== 'cli') exit;
+
+require __DIR__ . '/vendor/autoload.php';
+
+use Minicli\App as Minicli;
+use Dotenv\Dotenv;
+
+$dotEnv = Dotenv::createImmutable(__DIR__);
+$dotEnv->safeLoad();
+
+$app = new Minicli([
+    'app_path' => __DIR__ . '/app/Commands',
+    'debug' => false,
+]);
+
+$app->setSignature("Bitrix24 Exporter\n./minicli help\n");
+$app->runCommand($argv);

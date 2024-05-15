@@ -1,0 +1,8 @@
+vendor/
+.idea/
+bin_php/
+php/
+
+/logs/*.log
+*.csv
+.env
